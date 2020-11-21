@@ -154,14 +154,12 @@ class EndingScene extends Phaser.Scene {
         this.plurkBtn.on('pointerup', () => {
             if(audioOn) this.buttonSFX.play();
             if(this.sys.game.device.input.touch) {
-                console.log(encodeURI("https://www.plurk.com/?qualifier=shares&status=https://i.imgur.com/XY4Y38F.png https://sayohina2020.github.io/HinaNekoAdventure/"+
-                "\nI got "+this.score+" points in Hina neko's Adventure!\n#氷川紗夜日菜生誕祭2020"));
-                window.open(encodeURI("https://www.plurk.com/?qualifier=shares&status=https://i.imgur.com/XY4Y38F.png https://sayohina2020.github.io/HinaNekoAdventure/"+
-                "\nI got "+this.score+" points in Hina neko's Adventure!\n#氷川紗夜日菜生誕祭2020"));
+                window.open(encodeURI("https://www.plurk.com/?qualifier=shares&status=https://potasala1211bon.github.io/happyshiondayparty/"+
+                "\nI got "+this.score+" points in Happy Shion Day Party!\n##HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭"));
             }
             else {
-                window.open('https://www.plurk.com/?qualifier=shares&status='.concat(encodeURIComponent('https://i.imgur.com/XY4Y38F.png\nhttps://sayohina2020.github.io/HinaNekoAdventure/')).
-                concat(encodeURIComponent("\nI got "+this.score+" points in Hina neko's Adventure!\n#氷川紗夜日菜生誕祭2020")));
+                window.open('https://www.plurk.com/?qualifier=shares&status='.concat(encodeURIComponent('https://potasala1211bon.github.io/happyshiondayparty/')).
+                concat(encodeURIComponent("\nI got "+this.score+" points in Happy Shion Day Party!\n##HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭")));
             }
         });
         this.weiboBtn = this.add.image(config.width/2 + 150, 650, "weibo");
@@ -175,8 +173,8 @@ class EndingScene extends Phaser.Scene {
         this.weiboBtn.on('pointerup', () => {
             if(audioOn) this.buttonSFX.play();
             window.open('https://service.weibo.com/share/share.php?title='.
-            concat(encodeURIComponent("\nI got "+this.score+" points in Hina neko's Adventure! #氷川紗夜日菜生誕祭2020\n")).
-            concat("&url=https://sayohina2020.github.io/HinaNekoAdventure/&source=bshare&retcode=0&pic=https://i.imgur.com/XY4Y38F.png"))
+            concat(encodeURIComponent("\nI got "+this.score+" points in Happy Shion Day Party!\n##HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭")).
+            concat("&url=https://potasala1211bon.github.io/happyshiondayparty/&source=bshare&retcode=0"))
         });
 
         this.shareLabel = this.add.text(config.width/2, 580, 'SHARE', {
