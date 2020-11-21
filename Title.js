@@ -81,7 +81,7 @@ class Title extends Phaser.Scene {
         });
         
         // UI text
-        this.titleLabel = this.add.text(config.width/2, 250, 'HAPPY\nSHION DAY PARTY', {
+        this.titleLabel = this.add.text(config.width/2, 250, 'HAPPY\nSHION DAY\nPARTY', {
             fontFamily: 'Flatwheat',
             fontSize: 100,
             align: 'center',
