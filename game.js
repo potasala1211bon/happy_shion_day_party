@@ -17,7 +17,7 @@ var img_config = {
 var config = {
     width: 720,
     height: 1280,
-    renderer: Phaser.CANVAS,
+    renderer: Phaser.AUTO,
     parent: 'game',
     backgroundColor: 0x000000,
     scene: [Preload, Title, Readme, GameScene, EndingScene],
