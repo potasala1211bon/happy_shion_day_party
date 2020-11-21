@@ -5,6 +5,35 @@ class Preload extends Phaser.Scene {
 
     preload() {
 
+        var progressBar = this.add.graphics();
+        var progressBox = this.add.graphics();
+        progressBox.fillStyle(0x222222, 0.8);
+        progressBox.fillRect(config.width/2-160,config.height/2-25,320,50);
+
+        this.load.on('progress', function(value) {
+            progressBar.clear();
+            progressBar.fillStyle(0xffffff, 1.0);
+            progressBar.fillRect(config.width/2-150,config.height/2-15,300*value, 30);
+        });
+
+        // this.load.on('fileprogress', function(file) {
+        //     var loadingText = this.make.text({
+        //         x: 720 / 2,
+        //         y: 1280 / 2 - 50,
+        //         text: 'Loading...',
+        //         style: {
+        //             font: '20px monospace',
+        //             fill: '#ffffff'
+        //         }
+        //     });
+        //     loadingText.setOrigin(0.5, 0.5);
+        // });
+
+        this.load.on('complete', function(value) {
+            progressBar.destroy();
+            progressBox.destroy();
+        });
+
         // buttons img
         this.load.image("button", "assets/images/button_1.png");
         this.load.image("button_hover", "assets/images/button_2.png");
