@@ -155,11 +155,11 @@ class EndingScene extends Phaser.Scene {
             if(audioOn) this.buttonSFX.play();
             if(this.sys.game.device.input.touch) {
                 window.open(encodeURI("https://www.plurk.com/?qualifier=shares&status=https://potasala1211bon.github.io/happyshiondayparty/"+
-                "\nI got "+this.score+" points in Happy Shion Day Party!\n##HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭"));
+                "\nI got "+this.score+" points in Happy Shion Day Party!\n#HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭"));
             }
             else {
                 window.open('https://www.plurk.com/?qualifier=shares&status='.concat(encodeURIComponent('https://potasala1211bon.github.io/happyshiondayparty/')).
-                concat(encodeURIComponent("\nI got "+this.score+" points in Happy Shion Day Party!\n##HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭")));
+                concat(encodeURIComponent("\nI got "+this.score+" points in Happy Shion Day Party!\n#HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭")));
             }
         });
         this.weiboBtn = this.add.image(config.width/2 + 150, 650, "weibo");
