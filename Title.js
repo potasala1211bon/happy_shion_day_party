@@ -37,9 +37,9 @@ class Title extends Phaser.Scene {
         });
         
         // Start button
-        this.startBtn = this.add.sprite(config.width/2, config.height/2-110, "button").setOrigin(0.5, 0.5);
+        this.startBtn = this.add.sprite(config.width/2, config.height/2-130, "button").setOrigin(0.5, 0.5);
         this.startBtn.setInteractive();
-        this.startLable = this.add.text(config.width/2, config.height/2-100, 'START', {
+        this.startLable = this.add.text(config.width/2, config.height/2-120, 'START', {
             fontFamily: 'Flatwheat',
             fontSize: 50,
             align: 'center',
@@ -81,7 +81,7 @@ class Title extends Phaser.Scene {
         });
         
         // UI text
-        this.titleLabel = this.add.text(config.width/2, 250, 'HAPPY\nSHION DAY\nPARTY', {
+        this.titleLabel = this.add.text(config.width/2, 250, 'Hina Neko\'s\nAdventure', {
             fontFamily: 'Flatwheat',
             fontSize: 100,
             align: 'center',

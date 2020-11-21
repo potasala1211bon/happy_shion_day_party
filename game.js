@@ -33,8 +33,7 @@ var config = {
     },
     scale: {
         mode: Phaser.Scale.FIT,
-        parent: 'game',
-        autoCenter: Phaser.Scale.CENTER_BOTH
+        parent: 'game'
     }
 }
 
