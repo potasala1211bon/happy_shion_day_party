@@ -125,7 +125,7 @@ class EndingScene extends Phaser.Scene {
         this.fbBtn.on('pointerup', () => {
             if(audioOn) this.buttonSFX.play();
             window.open("https://www.facebook.com/sharer/sharer.php?u=https://sayohina2020.github.io/HinaNekoAdventure/&quote=I%20got%20"+
-            this.score+"%20points%20in%20Hina%20Neko's%20Adventure!" +encodeURIComponent(" #氷川紗夜日菜生誕祭2020"), "_blank", "toolbar=0,status=0");
+            this.score+"%20points%20in%20Happy%20Shion%20Day%20Party!" +encodeURIComponent("\n#HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭"), "_blank", "toolbar=0,status=0");
         });
         this.twitterBtn = this.add.image(config.width/2-50, 650, "twitter");
         this.twitterBtn.setInteractive();
