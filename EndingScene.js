@@ -124,8 +124,9 @@ class EndingScene extends Phaser.Scene {
         });
         this.fbBtn.on('pointerup', () => {
             if(audioOn) this.buttonSFX.play();
-            window.open("https://www.facebook.com/sharer/sharer.php?u=https://sayohina2020.github.io/HinaNekoAdventure/&quote=I%20got%20"+
-            this.score+"%20points%20in%20Happy%20Shion%20Day%20Party!" +encodeURIComponent("\n#HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭"), "_blank", "toolbar=0,status=0");
+            window.open("https://www.facebook.com/sharer/sharer.php?u=https://potasala1211bon.github.io/happyshiondayparty/&quote=I%20got%20"+
+            this.score+"%20points%20in%20Happy%20Shion%20Day%20Party!" +encodeURIComponent("\n#HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭"),
+            "_blank", "toolbar=0,status=0");
         });
         this.twitterBtn = this.add.image(config.width/2-50, 650, "twitter");
         this.twitterBtn.setInteractive();
@@ -138,8 +139,8 @@ class EndingScene extends Phaser.Scene {
         this.twitterBtn.on('pointerup', () => {
             if(audioOn) this.buttonSFX.play();
             window.open("https://twitter.com/intent/tweet?text=I%20got%20"+
-                this.score+"%20points%20in%20Hina%20Neko's%20Adventure!"+
-                encodeURIComponent('\nhttps://sayohina2020.github.io/HinaNekoAdventure/\n#氷川紗夜日菜生誕祭2020'),
+                this.score+"%20points%20in%20Happy%20Shion%20Day%20Party!"+
+                encodeURIComponent('\nhttps://potasala1211bon.github.io/happyshiondayparty/\n#HAPPYSHIONDAY\n#HAPPYSIONDAY\n#鶴房汐恩誕生祭'),
             "_blank", "toolbar=0,status=0");
         });
         this.plurkBtn = this.add.image(config.width/2 + 50, 650, "plurk");
