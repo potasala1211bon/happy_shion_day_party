@@ -35,6 +35,52 @@ class Title extends Phaser.Scene {
             else this.audioIcon.setTexture('mute');
             bgmObj.mute = !audioOn;
         });
+
+        //QR code
+        this.add.text(256*0.2+20, config.height-256-15-10-15, 'Plurk', {
+            fontFamily: 'Flatwheat',
+            fontSize: 20,
+            align: 'center',
+            color: '#ffffff'
+        }).setOrigin(0.5, 0.5);
+        this.plurkQR = this.add.image(70, config.height-256+45-15, "plurkQR").setOrigin(0.5,0.5).setScale(0.4);
+        this.plurkQR.setInteractive();
+        this.plurkQR.on('pointerover', () => {
+            this.plurkQR.setScale(0.45);
+        });
+        this.plurkQR.on('pointerout', () => {
+            this.plurkQR.setScale(0.4);
+        });
+        this.plurkQR.on('pointerup', () => {
+            window.open('http://plurk.com/u/potasala1211_bon');
+        });
+        
+
+        this.add.text(256*0.2+40+256*0.4, config.height-256-15-8-15, 'Instagram', {
+            fontFamily: 'Flatwheat',
+            fontSize: 20,
+            align: 'center',
+            color: '#ffffff'
+        }).setOrigin(0.5, 0.5);
+        this.instaQR = this.add.image(70 + 310*0.4, config.height-256+45-15, "instaQR").setOrigin(0.5,0.5).setScale(0.4);
+        this.instaQR.setInteractive();
+        this.instaQR.setInteractive();
+        this.instaQR.on('pointerover', () => {
+            this.instaQR.setScale(0.45);
+        });
+        this.instaQR.on('pointerout', () => {
+            this.instaQR.setScale(0.4);
+        });
+        this.instaQR.on('pointerup', () => {
+            window.open('https://instagram.com/SHIONJAM_1211');
+        });
+
+        this.add.text(256*0.4+25, config.height-158, 'Click to follow!', {
+            fontFamily: 'Flatwheat',
+            fontSize: 20,
+            align: 'center',
+            color: '#ffffff'
+        }).setOrigin(0.5, 0.5);
         
         // Start button
         this.startBtn = this.add.sprite(config.width/2, config.height/2-130, "button").setOrigin(0.5, 0.5);

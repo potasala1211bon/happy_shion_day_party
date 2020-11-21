@@ -16,19 +16,6 @@ class Preload extends Phaser.Scene {
             progressBar.fillRect(config.width/2-150,config.height/2-15,300*value, 30);
         });
 
-        // this.load.on('fileprogress', function(file) {
-        //     var loadingText = this.make.text({
-        //         x: 720 / 2,
-        //         y: 1280 / 2 - 50,
-        //         text: 'Loading...',
-        //         style: {
-        //             font: '20px monospace',
-        //             fill: '#ffffff'
-        //         }
-        //     });
-        //     loadingText.setOrigin(0.5, 0.5);
-        // });
-
         this.load.on('complete', function(value) {
             progressBar.destroy();
             progressBox.destroy();
@@ -90,6 +77,10 @@ class Preload extends Phaser.Scene {
 
         //upload score html
         this.load.html("nameform", "loginform.html");
+
+        //qrcode
+        this.load.image("plurkQR", "assets/images/plurk_qr.png")
+        this.load.image("instaQR", "assets/images/insta_qr.png")
     }
 
     create() {
