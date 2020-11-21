@@ -1,5 +1,5 @@
 var gameSetting = {
-    time: 1,
+    time: 120,
     playerInitSpeed: 300,
     playerPowerfulTime_max: 5000,
     speedUpLifeTime: 5000,
