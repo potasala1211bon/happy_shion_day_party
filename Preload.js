@@ -83,18 +83,7 @@ class Preload extends Phaser.Scene {
         this.load.image("instaQR", "assets/images/insta_qr.png")
     }
 
-    create() {
-        let spanTag = document.getElementsByTagName('span')[0];
-        var visitor = spanTag.getElementsByTagName('a')[0].innerHTML;
-        spanTag.remove();
-
-        this.add.text(10, 25, "You are JAM no. " + visitor.split(' ')[0] + " here!", {
-            fontFamily: 'Flatwheat',
-            fontSize: 40,
-            align: 'center',
-            color: '#3b6668',
-        }).setOrigin(0, 0.5);
-        
+    create() {        
         bgmObj = this.sound.add("bgm");
 
         this.buttonSFX = this.sound.add("select");
